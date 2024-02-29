@@ -29,7 +29,7 @@ async function update(url)
         speed.textContent = `---`
         hImg.setAttribute('src' ,"")
         sImg.setAttribute('src' ,"")
-        console.log('---');
+
 
     }
     else
@@ -41,7 +41,6 @@ async function update(url)
         speed.textContent = `${obj.wind.speed} Km/h`
         hImg.setAttribute('src' ,"./images/humidity.png")
         sImg.setAttribute('src' ,"./images/wind.png")
-        console.log(obj.weather[0].main);
 
         if(obj.weather[0].main == "Clouds")
         {
@@ -50,27 +49,20 @@ async function update(url)
         else if(obj.weather[0].main == "Haze")
         {
             image.setAttribute('src' , "./images/mist.png")
-            console.log(true);
         }
         
         else if(obj.weather[0].main == "Clear")
         {
             image.setAttribute('src' , "./images/clear.png")
-            console.log(true);
         }
         else if(obj.weather[0].main == "Rain")
         {
             image.setAttribute('src' , "./images/rain.png")
-            console.log(true);
         }
         else if(obj.weather[0].main == "Snow")
         {
             image.setAttribute('src' , "./images/snow.png")
-            console.log(true);
         }
-        
-        console.log(temp);
     }
-    console.log(obj);
 }
 
