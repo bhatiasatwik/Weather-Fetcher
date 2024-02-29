@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit;
+}
+html,body{
+    background-color: rgb(44, 43, 49);
+}
+.card{
+    background: linear-gradient(140deg, rgb(15, 97, 213), rgb(7, 68, 153), rgb(16, 68, 141), rgb(13, 48, 97), rgb(21, 55, 102));
+    width: 70%;
+    /* max-width: 600px; */
+    margin: 50px auto;
+    padding: 10px;
+    /* height: 700px; */
+    border-radius: 20px;
+    box-shadow: 7px 10px 10px 2px rgba(255, 255, 255, 0.149);
+
+}
+.search{
+    padding: 5px 10px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.search > input
+{
+    padding: 15px;
+    height: 50px;
+    flex: 1;
+    outline: 0;
+    border-radius: 10px;
+    border: 0px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    box-shadow: 3px 5px 5px 2px rgba(5, 3, 78, 0.655);
+}
+.search > button
+{
+    
+    height: 50px;
+    width: 60px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px 2px rgba(5, 3, 78, 0.655);
+
+}
+.search > button:hover
+{
+   background-color: rgb(196, 192, 199);
+}
+
+.search > button > i
+{
+    height: 100%;
+    object-fit: cover;
+}
+.mid{
+    padding-top: 20px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+}
+.weather-image
+{
+    /* background-color: blue; */
+    height: 200px;
+    
+}
+.weather-image > img
+{
+    /* background-color: blue; */
+    height: 100%;
+}
+.mid p {
+    color: white;
+}
+.mid :nth-child(2)
+{
+    /* display: none; */
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+.mid p:nth-child(3)
+{
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+.lower{
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    margin-top: 45px;
+}
+.col
+{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+
