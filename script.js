@@ -30,7 +30,7 @@ async function update(url)
         hImg.setAttribute('src' ,"")
         sImg.setAttribute('src' ,"")
         console.log('---');
-        
+
     }
     else
     {
@@ -55,7 +55,7 @@ async function update(url)
         
         else if(obj.weather[0].main == "Clear")
         {
-            image.setAttribute('src' , "./images/Clear.png")
+            image.setAttribute('src' , "./images/clear.png")
             console.log(true);
         }
         else if(obj.weather[0].main == "Rain")
